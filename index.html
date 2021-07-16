@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta http-equiv="Cache-Control" content="no-cache"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>speech-speedmeter</title>
+	<!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.15.0/plugins/CSSPlugin.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.15.0/easing/EasePack.min.js"></script>
+	<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.15.0/TweenLite.min.js"></script> -->
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" src="js/speedMater.js"></script>
+	<script type="text/javascript" src="js/speech.js"></script>
+	<script type="text/javascript" src="js/justgage.js"></script>
+	<script type="text/javascript" src="js/record.js"></script>
+	<script type="text/javascript" src="js/raphael-2.1.4.min.js"></script>
+
+	<!-- Compiled and minified CSS -->
+    <link type="text/css" rel="stylesheet" href="css/jquerysctipttop.css" >
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css">
+    <link type="text/css" rel="stylesheet" href="css/speechSpeed.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+            
+</head>
+<body>
+	<div class="center">
+		<div class="row white-text">
+			<div class="col card-panel teal lighten-3" style="width:400px">
+				<table width="100%">
+					<tr>
+						<td class="title">平均速度:</td>
+						<td class="detail"><div class="detail" id="averageSpeed">0</div>&nbsp;文字/分</td>
+					</tr>
+					<tr>
+						<th colspan="2">
+							<div id="gauge"></div>
+							<div id="statusMessage" class="message">
+								緊張しているか盛り上がっているようです。ブレイクダウンできるような話題に転換してみてはいかがでしょうか。
+							</div>
+						</th>
+					</tr>
+					<tr>
+						<th colspan="2">
+							<div class="center">
+								<a id="buttonRec" class="waves-effect  waves-light btn-circle1">REC</a>
+								&nbsp;&nbsp;&nbsp;&nbsp;
+								&nbsp;&nbsp;&nbsp;&nbsp;
+								&nbsp;&nbsp;&nbsp;&nbsp;
+								<a id="buttonEnd" class="waves-effect  waves-light  btn-circle2">END</a>
+							</div>
+							<br>
+							<div class="center">
+								<a id="buttonOut" type="application/force-download" href="#" download="議事録.txt" class="waves-effect waves-light btn" style="width:200px">議事録出力</a>
+							 </div>
+						</th>
+					</tr>
+				</table>
+			</div>
+			
+		</div>
+		<div class="row white-text">
+			<div class="col card-panel teal lighten-2" style="width:400px">
+				<div id="debugMessage" class="subtitle" >
+				</div>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>
