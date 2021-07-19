@@ -6,12 +6,11 @@
 	<meta http-equiv="Cache-Control" content="no-cache"> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>speech-speedmeter</title>
-	<!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-	<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.15.0/plugins/CSSPlugin.min.js"></script>
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.15.0/easing/EasePack.min.js"></script>
-	<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.15.0/TweenLite.min.js"></script> -->
+    <!-- Compiled and minified JavaScript -->
 	<script type="text/javascript" src="scripts/jquery.min.js"></script>
 	<script type="text/javascript" src="scripts/raphael-2.1.4.min.js"></script>
+
+    <!-- This application JavaScript -->
 	<script type="text/javascript" src="scripts/justgage.js"></script>
 	<script type="text/javascript" src="scripts/main.js"></script>
 	<script type="text/javascript" src="scripts/speedMater.js"></script>
@@ -19,9 +18,8 @@
 	<script type="text/javascript" src="scripts/record.js"></script>
 
 	<!-- Compiled and minified CSS -->
-    <link type="text/css" rel="stylesheet" href="css/jquerysctipttop.css" >
     <link type="text/css" rel="stylesheet" href="css/materialize.min.css">
-    <link type="text/css" rel="stylesheet" href="css/speechSpeed.css">
+    <link type="text/css" rel="stylesheet" href="css/main.css">
 
     <!-- Compiled and minified JavaScript -->
     <script type="text/javascript" src="scripts/materialize.min.js"></script>
@@ -34,7 +32,9 @@
 				<table width="100%">
 					<tr>
 						<td class="title">平均速度:</td>
-						<td class="detail"><div class="detail" id="averageSpeed">0</div>&nbsp;文字/分</td>
+						<td class="detail">
+							<div class="detail" id="averageSpeed">0</div>&nbsp;文字/分
+						</td>
 					</tr>
 					<tr>
 						<th colspan="2">
@@ -63,6 +63,7 @@
 			</div>
 			
 		</div>
+		<!-- debug -->
 		<div class="row white-text">
 			<div class="col card-panel teal lighten-2" style="width:400px">
 				<div id="debugMessage" class="subtitle" >
@@ -70,6 +71,5 @@
 			</div>
 		</div>
 	</div>
-
 </body>
 </html>
